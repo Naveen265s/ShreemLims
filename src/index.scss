@@ -19,10 +19,30 @@ a{
   text-decoration: none;
 }
 
-ul{
-  display: block;
+ul, ol{
+  list-style: none;
   li{
-    list-style: none;
     display: inline-block;
   }
+}
+figure{
+  margin: auto;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  object-fit: contain;
+  height: auto;
+}
+
+.action{
+  width: 130px;
+  height: 32px;
+  box-shadow: 1px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  background-color: $white;
+  border-radius: 26px;
+  border: 2px solid $white;
+  display: inline-block;
+  text-align: center;
 }
