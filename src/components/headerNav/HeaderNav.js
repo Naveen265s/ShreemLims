@@ -9,29 +9,29 @@ function HeaderNav() {
     return (
         <div className="container">
             <header className="App-header d-flex justify-content-between">
-                <div className="logo p-2">
-                    <img
-                        src={logo}
-                        className="App-logo"
-                        alt="logo"
-                        width="70px"
-                    />
+                <div className="logo p-3">
                     <a
                         className="App-link"
                         href="https://reactjs.org"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Shreem LIMS
+                        <img
+                            src={logo}
+                            className="App-logo"
+                            alt="logo"
+                            width="70px"
+                        />
+                        <h2>Shreem LIMS</h2>
                     </a>
                 </div>
-                <div className="search p-4">
+                <div className="search p-3">
                     <div>
                         <label>Search</label>
-                        <input type="text" placeholder="Search" />
+                        <input type="text" placeholder="Search" id="inputsearch"/>
                     </div>
                 </div>
-                <div className="userList">
+                <div className="userList p-2">
                     <ul>
                         <li className="p-3">
                             <a href="#home" title="Home">
@@ -48,10 +48,8 @@ function HeaderNav() {
                             </a>
                         </li>
                         <li className="p-3">
-                            <button title="Logout" id="logout">
-                                <span>
-                                    JD
-                                </span>
+                            <button title="Logout" id="sign-details">
+                                <span>JD</span>
                             </button>
                         </li>
                         <li className="p-3">
