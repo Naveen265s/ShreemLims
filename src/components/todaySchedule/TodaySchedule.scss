@@ -1,0 +1,36 @@
+@import "../../Variables&Fonts.scss";
+
+
+.today_schedule_sec{
+    ul{
+        padding: 0;
+        li{
+            background: $halfWhite;  
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            vertical-align: middle;
+            .schedule_time{
+                background: $white;
+                padding: 10px 20px;
+                border-radius: 10px;
+                text-align: center;
+            }
+            p{
+                margin: 0;
+                font-size: 14px;
+            }
+            button{
+                border: none;
+                outline: none;
+                background: none;
+                height: 24px;
+                width: 24px;
+                img{
+                    height: 24px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

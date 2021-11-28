@@ -7,7 +7,7 @@ import "./HeaderNav.scss";
 
 function HeaderNav() {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <header className="App-header d-flex justify-content-between">
                 <div className="logo p-3">
                     <a

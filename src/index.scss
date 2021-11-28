@@ -35,7 +35,7 @@ img{
 }
 
 .action{
-  width: 130px;
+  width: auto;
   height: 32px;
   box-shadow: 1px 5px 20px 0px rgba(0, 0, 0, 0.25);
   background-color: $white;
@@ -43,4 +43,18 @@ img{
   border: 2px solid $white;
   display: inline-block;
   text-align: center;
+  padding: 3px 25px;
+}
+
+h1{
+  font-size: clamp(1rem, 2.5vw, 2rem); 
+}
+h2{
+  font-size: clamp(1rem, 2.5vw, 1.5rem); 
+}
+h3{
+  font-size: clamp(1rem, 2.5vw, 1.17rem); 
+}
+h4{
+  font-size: clamp(1rem, 2.5vw, 1rem); 
 }

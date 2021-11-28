@@ -1,0 +1,22 @@
+@import "../../Variables&Fonts.scss";
+
+
+.team_member_sec{
+    background-color: #ffffff;
+    overflow: visible;
+    border-radius: 20px;
+    border: 1px solid #7d7d7d;
+    .members_details{
+        background-image: url("./assets/image.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        
+        ul{
+            padding-left: 10px;
+            li{
+                display: block;
+            }
+        }
+    }
+}
