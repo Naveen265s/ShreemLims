@@ -1,0 +1,80 @@
+Changes : 
+    breadcrumbs spacings
+    table
+    slider arrows
+
+mvp: minimum viable product
+
+Dashboard - json 
+
+sliders_tile = [
+    {
+        iconimg: "./path";
+        title: "Module Name";
+        openitems: number;
+        countsp: "ef";
+        actiontarget: "./link";
+        tilebackgroundcolor: "color value";
+    }
+]
+
+changereqest_tile = {
+    title : "title";
+    iconimg: " ./path";
+    tilebackgroundcolor: "colorValue";
+    status: [
+        {
+            tile: "To-Do";
+            count: number;
+            order: 0;
+            id : "todo1";
+        },
+         {
+            tile: "Active";
+            count: number;
+            order: 1;
+            id : "active1";
+        }
+    ]
+}
+
+
+teammembers_tile = {
+    tile: "titleName";
+    tilebackgroundcolor: "colorValue";
+    teamMembers: [
+        {
+            id: "uniqueID/EmpId";
+            name: "Name";
+            Designation: "Role";
+            status: "active/inActive";
+        },
+        {
+            id: "uniqueID/EmpId";
+            name: "Name";
+            Designation: "Role";
+            status: "active/inActive";
+        }
+    ]
+}
+
+trainingSchedhule_tile = {
+    date: today/date;
+    projectName: "projectName";
+    projectId: "id";
+    trainingName: "trainingName";
+    trainingId: "id";
+    trainingStartTime: Time;
+    trainingEndTime: EndTime;
+    TrainingDuration: Duration;
+    TrainingLink: "./link";
+}
+
+
+trainingSchedhule_table grid
+12 columns
+6 rows
+
+projectOne  grid-row:1, grid-column:1/6
+projectTwo  grid-row:2, grid-column:8/12
+ProjectThree  grid-row:3, grid-column:2/7

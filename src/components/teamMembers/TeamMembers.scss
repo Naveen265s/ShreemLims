@@ -7,7 +7,7 @@
     border-radius: 20px;
     border: 1px solid #7d7d7d;
     .members_details{
-        background-image: url("./assets/image.png");
+        background-image: url("./assets/TeamMembers.jpeg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -16,6 +16,12 @@
             padding-left: 10px;
             li{
                 display: block;
+                h3{
+                    margin: 0;
+                }
+                p{
+                    font-size: 14px;
+                }
             }
         }
     }
