@@ -5,14 +5,20 @@ Changes :
 
 mvp: minimum viable product
 
+tool : canva
+
 Dashboard - json 
 
 sliders_tile = [
     {
         iconimg: "./path";
         title: "Module Name";
-        openitems: number;
-        countsp: "ef";
+        items: [
+            {
+                openitems: number;
+                countsp: "ef";
+            }
+        ]
         actiontarget: "./link";
         tilebackgroundcolor: "color value";
     }
@@ -29,7 +35,7 @@ changereqest_tile = {
             order: 0;
             id : "todo1";
         },
-         {
+        {
             tile: "Active";
             count: number;
             order: 1;
@@ -58,17 +64,30 @@ teammembers_tile = {
     ]
 }
 
-trainingSchedhule_tile = {
-    date: today/date;
-    projectName: "projectName";
-    projectId: "id";
-    trainingName: "trainingName";
-    trainingId: "id";
-    trainingStartTime: Time;
-    trainingEndTime: EndTime;
-    TrainingDuration: Duration;
-    TrainingLink: "./link";
-}
+trainingSchedhule_tile = [
+    {
+        date: today/date;
+        projectName: "projectName";
+        projectId: "id";
+        trainingName: "trainingName";
+        trainingId: "id";
+        trainingStartTime: Time;
+        trainingEndTime: EndTime;
+        TrainingDuration: Duration;
+        TrainingLink: "./link";
+    },
+    {
+        date: today/date;
+        projectName: "projectName";
+        projectId: "id";
+        trainingName: "trainingName";
+        trainingId: "id";
+        trainingStartTime: Time;
+        trainingEndTime: EndTime;
+        TrainingDuration: Duration;
+        TrainingLink: "./link";
+    }
+]
 
 
 trainingSchedhule_table grid
