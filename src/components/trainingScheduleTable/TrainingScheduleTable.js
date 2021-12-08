@@ -10,10 +10,26 @@ function TrainingSchedule() {
             <table>
                 <thead>
                     <tr>
-                        <th>True</th>
+                        <th>6:00</th>
+                        <th>7:00</th>
+                        <th>8:00</th>
+                        <th>9:00</th>
+                        <th>10:00</th>
+                        <th>11:00</th>
+                        <th>12:00</th>
                     </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     );

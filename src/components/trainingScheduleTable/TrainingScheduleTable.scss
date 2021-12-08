@@ -1,2 +1,8 @@
 @import "../../Variables&Fonts.scss";
 
+table{
+    width: 100%;
+    th,td{
+        padding: 10px;
+    }
+}

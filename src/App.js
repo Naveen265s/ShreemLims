@@ -4,7 +4,7 @@ import DashBoard from "./components/dashBoard/DashBoard";
 import BreadCrumbs from "./components/breadCrumbs/BreadCrumbs";
 import PageTitleHeader from "./components/pageTitleHeader/PageTitleHeader";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Users_Security from "./components/users&security/Users_Security";
+import UsersSecurity from "./components/users&security/UsersSecurity";
 
 function App() {
     return (
@@ -14,8 +14,8 @@ function App() {
             <BreadCrumbs />
             <DashBoard />
             <Routes>
-                <Route exact path="/" component={DashBoard} />
-                <Route path="/Users_Security" component={Users_Security} />
+                <Route exact path="/" element={<DashBoard/>} />
+                <Route path="/UsersSecurity" element={<UsersSecurity/>} />
             </Routes>
         </Router>
     );
