@@ -7,7 +7,10 @@ import { useNavigate } from "react-router-dom";
 export default function SimpleSlider() {
     const navigate = useNavigate();
 
-    navigate('/User_S');
+    const handleNavigate = () => {
+        navigate('/UsersSecurity');
+    }
+
     var settings = {
         arrow: true,
         lazyLoad: true,
@@ -53,9 +56,9 @@ export default function SimpleSlider() {
                     </div>
                     <h5>Workflow</h5>
                     <p>5 WF</p>
-                    <a href="/Users_Security" className="action">
+                    <button className="action" onClick={handleNavigate}>
                         View
-                    </a>
+                    </button>
                 </div>
                 <div className="product-info">
                     <div className="product-img">

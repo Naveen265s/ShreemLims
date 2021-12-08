@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Users_Security.scss";
+import "./UsersSecurity.scss";
 
 function users_security() {
     return (
