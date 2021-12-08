@@ -4,7 +4,7 @@ import "./UsersSecurity.scss";
 function users_security() {
     return (
         <div>
-            <div className="d-flex">
+            <div className="d-flex ">
                 <div>
                     <button>Security Role</button>
                 </div>
