@@ -9,7 +9,7 @@ export default function Login() {
     const [emailErr, setEmailErr] = useState(false);
     const [pwdError, setPwdError] = useState(false);
     const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
-    console.log(email)
+    console.log(email);
 
     const validate = (e) => {
         e.preventDefault();
@@ -19,12 +19,10 @@ export default function Login() {
         if (!validPassword.test(password)) {
             setPwdError(true);
         }
-        
 
-if(email==="lakshman.kl458@gmail.com" && password==="Lakshman@458"){
-    setIsUserLoggedIn(true)
-}
-
+        if (email === "Lira@gmail.com" && password === "Lira@1234") {
+            setIsUserLoggedIn(true);
+        }
     };
     return (
         <>
@@ -87,8 +85,7 @@ if(email==="lakshman.kl458@gmail.com" && password==="Lakshman@458"){
                         </button>
                     </form>
                 </div>
-             ) 
-             } 
+            )}
         </>
     );
 }
