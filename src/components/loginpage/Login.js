@@ -8,7 +8,8 @@ export default function Login() {
     const [password, setPassword] = useState("");
     const [emailErr, setEmailErr] = useState(false);
     const [pwdError, setPwdError] = useState(false);
-    const [routes, setRoutes] = useState(false);
+    const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
+    console.log(email)
 
     const validate = (e) => {
         e.preventDefault();
@@ -18,11 +19,16 @@ export default function Login() {
         if (!validPassword.test(password)) {
             setPwdError(true);
         }
-        setRoutes(true);
+        
+
+if(email==="lakshman.kl458@gmail.com" && password==="Lakshman@458"){
+    setIsUserLoggedIn(true)
+}
+
     };
     return (
         <>
-            {routes ? (
+            {isUserLoggedIn ? (
                 <RoutesNavigates />
             ) : (
                 <div className="box_shadow">
@@ -81,7 +87,8 @@ export default function Login() {
                         </button>
                     </form>
                 </div>
-            )}
+             ) 
+             } 
         </>
     );
 }
