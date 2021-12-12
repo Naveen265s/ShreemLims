@@ -36,6 +36,14 @@
         .form-group,
         .form-check {
             margin-bottom: 20px;
+            .form-check-input {
+                background-color: #8f8f8f;
+                border-color: #8f8f8f;
+                box-shadow: none;
+                &:checked {
+                    background-color: #8f8f8f;
+                }
+            }
         }
         .form-group {
             display: block;
@@ -46,14 +54,23 @@
             }
             input:not([type="checkbox"]) {
                 width: 100%;
-                background-color: grey;
+                background-color: #8f8f8f;
                 color: $white;
                 border: 0;
+                outline: none;
+                box-shadow: none;
+                font-weight: 500;
                 &::placeholder {
                     color: $white;
                 }
             }
+            input[type="checkbox"] {
+                background-color: #8f8f8f;
+                outline: none;
+                box-shadow: none;
+            }
         }
+
         .actions-btn {
             display: flex;
             justify-content: space-between;
@@ -74,7 +91,7 @@
     }
 }
 .error_msg {
-    background-color: #FF6161;
+    background-color: #ff6161;
     color: white;
     font-size: 12px;
     padding: 4px 10px;
