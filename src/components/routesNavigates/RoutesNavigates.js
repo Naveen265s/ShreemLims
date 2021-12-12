@@ -4,7 +4,7 @@ import DashBoard from "../dashBoard/DashBoard";
 import BreadCrumbs from "../breadCrumbs/BreadCrumbs";
 import PageTitleHeader from "../pageTitleHeader/PageTitleHeader";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import UsersSecurity from "../users&security/UsersSecurity";
+import UsersSecurity from "../usersSecurity/UsersSecurity";
 import PageNotFound from "../../PageNotFound";
 
 function RoutesNavigates() {
