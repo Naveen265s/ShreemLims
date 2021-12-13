@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./TrainingSchedule.scss";
 import ActionBtn from "./assets/action.png";
 import TrainingScheduleTable from "../trainingScheduleTable/TrainingScheduleTable";
-import BatchScheduleTable from "../batchScheduleTable/BatchScheduleTable";
+import BatchScheduleTable from "../BatchScheduleTable/BatchScheduleTable";
 
 function TrainingSchedule() {
     const [tableFalse, setTableFalse] = useState(false);

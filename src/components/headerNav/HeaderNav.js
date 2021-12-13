@@ -4,6 +4,7 @@ import logout from "./assets/Logout.png";
 import bell from "./assets/Bell.png";
 import home from "./assets/Home.png";
 import "./HeaderNav.scss";
+import Workflow from "../workflow/Workflow";
 
 function HeaderNav() {
     return (
@@ -56,10 +57,12 @@ function HeaderNav() {
                             <button title="Logout">
                                 <img src={logout} alt="Logout" />
                             </button>
+                            
                         </li>
                     </ul>
                 </div>
             </header>
+        <Workflow/>
         </div>
     );
 }
