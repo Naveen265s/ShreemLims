@@ -10,7 +10,9 @@ export default function SimpleSlider() {
     const handleNavigate = () => {
         navigate('/UsersSecurity');
     }
-
+    const handleSop = () => {
+        navigate('/Sop');
+    }
     var settings = {
         arrow: true,
         lazyLoad: true,
@@ -68,9 +70,9 @@ export default function SimpleSlider() {
                     </div>
                     <h5>Sop</h5>
                     <p>5 Sop</p>
-                    <a href="#view" className="action">
+                    <button className="action" onClick={handleSop}>
                         View
-                    </a>
+                    </button>
                 </div>
                 <div className="product-info">
                     <div className="product-img">

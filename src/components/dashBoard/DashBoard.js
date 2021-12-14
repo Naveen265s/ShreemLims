@@ -6,9 +6,12 @@ import ChangeRequest from "../changeRequest/ChangeRequest";
 import TeamMembers from "../teamMembers/TeamMembers";
 import TodaySchedule from "../todaySchedule/TodaySchedule";
 
+import PageTitleHeader from "../pageTitleHeader/PageTitleHeader";
+
 export default function SimpleSlider() {
     return (
         <div className="container-fluid">
+            <PageTitleHeader />
             <div className="row dashboard_top mb-5">
                 <div className="col-md-12 col-lg-6 dashboard_slider">
                     <DashBoardSlider />

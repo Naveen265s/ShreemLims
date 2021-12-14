@@ -9,11 +9,10 @@ export default function CreateSop(props) {
                 <Modal.Body>
                     <div className="create_sop">
                         <div className="create_sop_div">
-                            <input type="text"></input>
+                            <input type="text" />
                         </div>
-                        <br />
                         <div>
-                            <input type="text"></input>
+                            <input type="text" />
                         </div>
                     </div>
                 </Modal.Body>
