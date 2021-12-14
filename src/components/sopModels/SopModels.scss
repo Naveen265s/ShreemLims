@@ -1,0 +1,124 @@
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 3.5rem);
+    .modal-content {
+        padding: 20px;
+        .modal-header {
+            border: none;
+            padding: 0;
+        }
+        .modal-body {
+            padding-top: 0;
+            h3 {
+                margin-bottom: 30px;
+            }
+            form {
+                fieldset {
+                    padding-left: 20px;
+                    .field {
+                        margin-bottom: 20px;
+                        label {
+                            min-width: 150px;
+                        }
+                        input {
+                            box-shadow: inset 0px 1px 0px 0.5px
+                                rgba(0, 0, 0, 0.06);
+                            background-color: #ffffff;
+                            border-radius: 8px;
+                            border: 1px solid #bdbdbd;
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+                .actions {
+                    text-align: center;
+                    margin-top: 10px;
+                    button {
+                        background-color: rgba(#007a04, 0.7);
+                        overflow: hidden;
+                        border-radius: 26px;
+                        border: 2px solid #fce3e3;
+                        min-width: 100px;
+                    }
+                }
+            }
+        }
+        .modal-footer {
+            border: none;
+            padding: 0;
+            justify-content: center;
+            button {
+                border-radius: 25px;
+                min-width: 100px;
+                background-color: rgba(#999999, 1);
+                border-radius: 26px;
+                border: 2px solid #999999;
+            }
+        }
+    }
+    &.createSopType {
+    }
+    &.createSop {
+        .modal-content {
+            .modal-header {
+            }
+            .modal-body {
+                h3 {
+                }
+                form {
+                    fieldset {
+                        .field {
+                            // text-align: center;
+                            label {
+                                font-size: 0;
+                                display: none;
+                            }
+                            input {
+                                background-color: #faede0;
+                                border-radius: 10px;
+                                border: 1px solid #858585;
+                                padding-left: 40px;
+                                color: #424242;
+                                &::placeholder {
+                                    color: #424242;
+                                }
+                            }
+                            &.buildSop {
+                                position: relative;
+                                &::before {
+                                    content: "";
+                                    background: url("./assets/buildSop.png");
+                                    background-repeat: no-repeat;
+                                    background-size: 25px;
+                                    display: block;
+                                    width: 40px;
+                                    height: 40px;
+                                    position: absolute;
+                                    top: 5px;
+                                    left: 10px;
+                                }
+                            }
+                            &.uploadFile {
+                                position: relative;
+                                &::before {
+                                    content: "";
+                                    background: url("./assets/uploadFiles.png");
+                                    background-repeat: no-repeat;
+                                    background-size: 25px;
+                                    display: block;
+                                    width: 40px;
+                                    height: 40px;
+                                    position: absolute;
+                                    top: 7px;
+                                    left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
