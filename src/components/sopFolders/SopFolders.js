@@ -10,23 +10,22 @@ import Upload from "./assets/upload.png";
 import "./SopFolders.scss";
 
 function SopFolders() {
-    const [master_modal, setmaster_modal] = useState(false);
+    const [masterModal, setmasterModal] = useState(false);
     const [sopFolderSett, setSopFolderSett] = useState(false);
 
     const handleOnClick = () => {
         setSopFolderSett(true);
     };
-
     return (
         <div>
             <div className="sop_folder">
-                <button className="action sche_btn" onClick={handleOnClick}>
+                <button className="action sopFolder_btn" onClick={handleOnClick}>
                     <img src={ActionBtn} alt="ActionBtn" />
                 </button>
                 <div className="sop_cont">
                     <img
                         onClick={() => {
-                            setmaster_modal(true);
+                            setmasterModal(true);
                         }}
                         src={master}
                         alt="sop"
@@ -51,10 +50,46 @@ function SopFolders() {
                             <img src={Delete} alt="delete"/>
                         </li>
                     </ul>
+                    
+                </div>
+            </div>
+            <div className="sop_folder active">
+                <button className="action sopFolder_btn" onClick={handleOnClick}>
+                    <img src={ActionBtn} alt="ActionBtn" />
+                </button>
+                <div className="sop_cont">
+                    <img
+                        onClick={() => {
+                            setmasterModal(true);
+                        }}
+                        src={master}
+                        alt="sop"
+                    />
+                    <div>
+                        <h3>Master Sop</h3>
+                        <p>Modified Date</p>
+                    </div>
+                </div>
+                <div className="sop_folder_layer" >
+                    <ul>
+                        <li>
+                            <img src={Upload} alt="delete"/>
+                        </li>
+                        <li>
+                            <img src={Share} alt="delete"/>
+                        </li>
+                        <li>
+                            <img src={Setting} alt="delete"/>
+                        </li>
+                        <li>
+                            <img src={Delete} alt="delete"/>
+                        </li>
+                    </ul>
+                    
                 </div>
             </div>
 
-            <Mastersop show={master_modal} onHide={() => setmaster_modal()} />
+            <Mastersop show={masterModal} onHide={() => setmasterModal()} />
         </div>
     );
 }
