@@ -1,5 +1,8 @@
 @import "../../VariablesFonts.scss";
 
+.sop_container {
+    background-color: #f5f8f1;
+}
 .sop-cont,
 .sop-add {
     padding: 20px 0;
@@ -35,11 +38,13 @@
     }
 }
 .sop-add {
-    display: flex;
-    flex-direction: row;
     background-color: white;
     .sop-add_cont {
         width: 100%;
+        padding-top: 10px;
+        ul {
+            margin-bottom: 0;
+        }
         .sop_btn {
             li {
                 padding: 0 15px;
@@ -50,11 +55,11 @@
             }
         }
         .sop_list_grid {
-            li{
-                img{
+            li {
+                img {
                     width: 60px;
                 }
-                strong{
+                strong {
                     font-size: 0;
                     display: none;
                 }
@@ -64,8 +69,10 @@
 }
 
 .sop-cont {
-    background-color: #f5f8f1;
+    max-width:900px;
+    margin: 0 auto; 
+    flex-wrap: wrap;
     .sop {
-        padding: 0 30px;
+        // padding: 0 30px;
     }
 }

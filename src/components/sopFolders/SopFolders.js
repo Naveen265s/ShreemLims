@@ -17,7 +17,7 @@ function SopFolders() {
         setSopFolderSett(true);
     };
     return (
-        <div>
+        <div className="sop_sec">
             <div className="sop_folder">
                 <button className="action sopFolder_btn" onClick={handleOnClick}>
                     <img src={ActionBtn} alt="ActionBtn" />

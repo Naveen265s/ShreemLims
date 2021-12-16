@@ -1,9 +1,11 @@
 import React from "react";
 import "./BreadCrumbs.scss";
-import{useNavigate} from "react-router-dom";
+import{useNavigate, useLocation } from "react-router-dom";
+
 
 function BreadCrumbs() {
     const navigate = useNavigate();
+    const location = useLocation();
     const handleHome = () => {
         navigate("/");
     }
@@ -15,7 +17,7 @@ function BreadCrumbs() {
                         <button onClick={handleHome}>Home</button>
                     </li>
                     <li>
-                        <button >DashBoard</button>
+                        <button >{location.pathname.slice(1)}</button>
                     </li>
                 </ul>
             </div>

@@ -16,8 +16,8 @@ export default function Sop() {
     const [openModal1, setopenmodal1] = useState(false);
 
     return (
-        <div className="container-fluid">
-            <div className="sop-cont d-flex  justify-content-center">
+        <div className="container-fluid sop_container">
+            <div className="sop-cont d-flex  justify-content-around">
                 <div class="sop">
                     <button>
                         <img src={workflow} alt="ActionBtn" />
@@ -43,7 +43,7 @@ export default function Sop() {
                     </button>
                 </div>
             </div>
-            <div className="sop-add">
+            <div className="sop-add row ">
                 <div className="sop-add_cont d-flex  justify-content-between">
                     <ul className="sop_btn">
                         <li className="addsop_type ">
