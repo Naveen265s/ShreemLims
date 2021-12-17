@@ -1,17 +1,22 @@
-import React from 'react'
-import { Modal } from 'react-bootstrap'
+import React from "react";
+import { Modal } from "react-bootstrap";
 
 export default function ShareModal(props) {
     return (
         <div>
-            <Modal show={props.show}  onClick={props.onHide}>
-                <Modal.Header closeButton>
-                   
-                </Modal.Header>
+            <Modal show={props.show} onClick={props.onHide}>
+                <Modal.Header closeButton>Share</Modal.Header>
                 <Modal.Body>
-                <h1>Share MOdals</h1>
-                    </Modal.Body>
+                    <div>
+                        <h4>Share the folder with the team</h4>
+                        <select>
+                            <option>All</option>
+                            <option>HOD</option>
+                            <option>Operator</option>
+                        </select>
+                    </div>                  
+                </Modal.Body>
             </Modal>
-        </div>
-    )
+        </div>                                              
+    );
 }
