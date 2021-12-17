@@ -3,7 +3,7 @@ import { Button, Modal } from "react-bootstrap";
 
 export default function Create_Sop_type(props) {
     return (
-        <div>
+        <>
             <Modal show={props.show} dialogClassName="createSopType">
                 <Modal.Header onClick={props.onHide} closeButton></Modal.Header>
                 <Modal.Body>
@@ -28,6 +28,6 @@ export default function Create_Sop_type(props) {
                     </form>
                 </Modal.Body>
             </Modal>
-        </div>
+        </>
     );
 }

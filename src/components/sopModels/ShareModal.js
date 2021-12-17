@@ -3,7 +3,7 @@ import { Modal } from "react-bootstrap";
 
 export default function ShareModal(props) {
     return (
-        <div>
+        <>
             <Modal show={props.show} onClick={props.onHide}>
                 <Modal.Header closeButton>Share</Modal.Header>
                 <Modal.Body>
@@ -17,6 +17,6 @@ export default function ShareModal(props) {
                     </div>                  
                 </Modal.Body>
             </Modal>
-        </div>                                              
+        </>                                              
     );
 }

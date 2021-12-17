@@ -3,7 +3,7 @@ import { Modal } from 'react-bootstrap'
 
 export default function DeleteModal(props) {
     return (
-        <div>
+        <>
             <Modal show={props.show}>
                 <Modal.Body>
                     <Modal.Header onClick={props.onHide} closeButton></Modal.Header>
@@ -12,6 +12,6 @@ export default function DeleteModal(props) {
 
                 </Modal>
             
-        </div>
+        </>
     )
 }

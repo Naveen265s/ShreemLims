@@ -4,7 +4,7 @@ import "./SopModels.scss";
 
 export default function CreateSop(props) {
     return (
-        <div>
+        <>
             <Modal show={props.show} dialogClassName="createSop">
                 <Modal.Header onClick={props.onHide} closeButton></Modal.Header>
                 <Modal.Body>
@@ -32,6 +32,6 @@ export default function CreateSop(props) {
                     <Button onClick={props.onHide}>Cancel</Button>
                 </Modal.Footer>
             </Modal>
-        </div>
+        </>
     );
 }

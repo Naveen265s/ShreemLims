@@ -11,8 +11,8 @@ import "./SettingModal.scss";
 
 export default function SettingModal(props) {
     return (
-        <div className="setting_modal">
-            <Modal show={props.show}>
+        <>
+            <Modal show={props.show} dialogClassName="setting_modal">
                 <Modal.Header onClick={props.onHide} closeButton>
                     Folder Setting
                 </Modal.Header>
@@ -50,6 +50,6 @@ export default function SettingModal(props) {
                 </Modal.Body>
                 
             </Modal>
-        </div>
+        </>
     );
 }
