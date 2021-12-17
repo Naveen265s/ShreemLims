@@ -1,70 +1,91 @@
 @import "../../VariablesFonts.scss";
 
-.sop_sec{
+.sop_sec {
     background-color: #f5f8f1;
     padding: 40px 20px 20px;
 }
 .sop_folder {
-    box-shadow: 6px 15px 27px 0px rgba(0, 0, 0, 0.25);
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 20px;
-    position: relative;
     text-align: center;
-    display: inline-block;
-    overflow: hidden;
-    margin: 0 20px 20px;
-    width: 13%;
-    img{
-        width: 100px;
-    }
-    button {
-        border: none;
-        outline: none;
-        background: none;
-        box-shadow: none;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        padding: 0;
-        img{
-            object-fit: contain;
-            width: 20px;
-            height: 25px;
-            vertical-align: middle;
-        }
-    }
-    .sop_cont{
-        h3, p{
-            margin: 0;
-        }
-        p{
-            font-size: 12px;
-        }
-    }
-    .sop_folder_layer{
-        background-color: rgba($black, 0.5);
-        position: absolute;
-        top: 0;
-        left: 0;
+    .sop_folder_inner {
+        box-shadow: 6px 15px 27px 0px rgba(0, 0, 0, 0.25);
+        background-color: #ffffff;
+        border-radius: 15px;
+        padding: 30px 20px;
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        overflow: hidden;
         width: 100%;
-        height: 100%;
-        display: none;
-        padding: 10px;
-        ul{
+        max-width: 90%;
+        margin: 0 auto;
+        img {
+            width: 120px;
+        }
+        button {
+            border: none;
+            outline: none;
+            background: none;
+            box-shadow: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
             padding: 0;
-            li{
-                margin: 0 10px;
-                img{
-                    width: 20px;
+            img {
+                object-fit: contain;
+                width: 20px;
+                height: 25px;
+                vertical-align: middle;
+            }
+        }
+        .sop_cont {
+            h3,
+            p {
+                margin: 0;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+        .sop_folder_layer {
+            background-color: rgba($black, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            padding: 10px;
+            ul {
+                padding: 0;
+                li {
+                    // margin: 0 10px;
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+            .color_section{
+                h3{
+                    color: $white;
+                }
+                ul{
+                    li{
+                        label{
+                            font-size: 0; 
+                            display: none;
+                        }
+                        input{
+                            border:none;
+                            outline: none;
+                        }
+                    }
                 }
             }
         }
     }
-    &.active{
-        .sop_folder_layer{
+    &.active {
+        .sop_folder_layer {
             display: block;
         }
     }
 }
-

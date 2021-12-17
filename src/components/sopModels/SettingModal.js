@@ -11,7 +11,7 @@ import "./SettingModal.scss";
 
 export default function SettingModal(props) {
     return (
-        <div>
+        <div className="setting_modal">
             <Modal show={props.show}>
                 <Modal.Header onClick={props.onHide} closeButton>
                     Folder Setting

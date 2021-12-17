@@ -1,52 +1,55 @@
-.radio_button{
-    display: flex;
-    flex-direction: column;
-    margin-left: 150px;
-    margin-top: 50px;
-}
-input{
-    border-radius: 4px;
-    width: 300px;
-}
-select{
-    width: 300px;
-    border-radius: 4px;
-}
-.dropdown{
-    display: flex;
-    flex-direction: column;
-}
-.password{
-    margin-top: 10px;
-    label{
-       
+@import "../../VariablesFonts.scss";
+.setting_modal {
+    .radio_button {
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+        margin-top: 50px;
     }
-}
-.radio{
-    display: flex;
-    flex-direction: column;
-}
-.rename{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-}
-.buttons{
-    margin-top: 30px;
-    margin-left: 30px;
-}
-Button{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: justify;
-}
-button.btn.btn-primary {
-    margin-left: 20px;
-}
-label{
-    color: aquamarine;
-}
+    
+    input {
+        border-radius: 4px;
+        width: 300px;
+    }
+    select {
+        width: 300px;
+        border-radius: 4px;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+    }
+    .password {
+        margin-top: 10px;
+        label {
+        }
+    }
+    .radio {
+        display: flex;
+        flex-direction: column;
+    }
+    .rename {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .buttons {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    Button {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: justify;
+    }
+    button.btn.btn-primary {
+        margin-left: 20px;
+    }
+    label {
+        color: aquamarine;
+    }
 
-h4{
-    text-align: center;
+    h4 {
+        text-align: center;
+    }
 }
