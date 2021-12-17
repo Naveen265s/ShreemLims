@@ -7,7 +7,7 @@ function BreadCrumbs() {
     const navigate = useNavigate();
     const location = useLocation();
     const handleHome = () => {
-        navigate("/");
+        navigate("/DashBoard");
     }
     return (
         <div>

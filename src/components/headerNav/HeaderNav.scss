@@ -8,9 +8,16 @@ header {
         vertical-align: middle;
     }
 }
+.App-header{
+    >div{
+        height: 100%;
+        vertical-align: middle;
+    }
+}
 .search{
     label{
         font-size: 0;
+        display: none;
     }
     input{
         width:100%;

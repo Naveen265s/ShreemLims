@@ -13,7 +13,7 @@ function RoutesNavigates() {
             <HeaderNav />
             <BreadCrumbs />
             <Routes>
-                <Route exact path="/" element={<DashBoard />} />
+                <Route exact path="/DashBoard" element={<DashBoard />} />
                 <Route path="/UsersSecurity" element={<UsersSecurity />} />
                 <Route path="*" element={<PageNotFound />} />
                 <Route path="/Sop" element={<Sop/>}/>

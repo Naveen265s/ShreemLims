@@ -9,8 +9,8 @@ import "./HeaderNav.scss";
 function HeaderNav() {
     return (
         <div className="container-fluid">
-            <header className="App-header d-flex justify-content-between">
-                <div className="logo p-3">
+            <header className="App-header row justify-content-between">
+                <div className="logo p-3 col-sm-12 col-lg-3">
                     <a
                         className="App-link"
                         href="https://reactjs.org"
@@ -26,13 +26,13 @@ function HeaderNav() {
                         <h2>Shreem LIMS</h2>
                     </a>
                 </div>
-                <div className="search p-3">
+                <div className="search p-3 col-sm-12 col-lg-6 d-flex justify-content-center">
                     <div>
                         <label>Search</label>
                         <input type="text" placeholder="Search" id="inputsearch"/>
                     </div>
                 </div>
-                <div className="userList p-2">
+                <div className="userList p-2 col-sm-12 col-lg-3 d-flex justify-content-end">
                     <ul>
                         <li className="p-3">
                             <a href="#home" title="Home">
