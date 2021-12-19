@@ -4,16 +4,22 @@ import logout from "./assets/Logout.png";
 import bell from "./assets/Bell.png";
 import home from "./assets/Home.png";
 import "./HeaderNav.scss";
+import { useNavigate } from "react-router-dom";
 
 
 function HeaderNav() {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/DashBoard');
+    }
     return (
         <div className="container-fluid">
             <header className="App-header row justify-content-between">
                 <div className="logo p-3 col-sm-12 col-lg-3">
-                    <a
+                    <button
                         className="App-link"
-                        href="https://reactjs.org"
+                        onClick={handleClick}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -24,7 +30,7 @@ function HeaderNav() {
                             width="70px"
                         />
                         <h2>Shreem LIMS</h2>
-                    </a>
+                    </button>
                 </div>
                 <div className="search p-3 col-sm-12 col-lg-6 d-flex justify-content-center">
                     <div>
