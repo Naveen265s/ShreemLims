@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import UsersSecurity from "../usersSecurity/UsersSecurity";
 import PageNotFound from "../../PageNotFound";
 import Sop from "../sop/Sop";
+import ModuleTypes from "../moduleTypes/ModuleTypes";
 
 function RoutesNavigates() {
     return (
@@ -15,6 +16,7 @@ function RoutesNavigates() {
             <Routes>
                 <Route exact path="/DashBoard" element={<DashBoard />} />
                 <Route path="/UsersSecurity" element={<UsersSecurity />} />
+                <Route path="ModuleTypes" element={<ModuleTypes/>} />
                 <Route path="/Sop" element={<Sop/>}/>
                 <Route path="*" element={<PageNotFound />} />
             </Routes>

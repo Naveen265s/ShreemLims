@@ -48,7 +48,7 @@ function SopFolderLayer() {
                     <li className="delete">
                         <button
                             onClick={() => {
-                                setdeletemodal(true);
+                                setdeletemodal (true);
                             }}
                         >
                             <img src={Delete} alt="delete" />
@@ -58,9 +58,37 @@ function SopFolderLayer() {
                 <div className="color_section">
                     <h3>Colors</h3>
                     <ul>
-                        <li>
-                            <label>Orange</label>
-                            <input type="color" />
+                        <li className="sop_orange">
+                            <label for="orange">Orange</label>
+                            <input type="color" id="orange"/>
+                        </li>
+                        <li className="sop_glass active">
+                            <label for="glass">Glass</label>
+                            <input type="color" id="glass"/>
+                        </li>
+                        <li className="sop_green">
+                            <label for="green">Green</label>
+                            <input type="color" id="green"/>
+                        </li>
+                        <li className="sop_lightpink">
+                            <label for="lightpink">Light Pink</label>
+                            <input type="color" id="lightpink"/>
+                        </li>
+                        <li className="sop_lightblue">
+                            <label for="lightblue">Light Blue</label>
+                            <input type="color" id="lightblue"/>
+                        </li>
+                        <li className="sop_blue">
+                            <label for="blue">Blue</label>
+                            <input type="color" id="blue"/>
+                        </li>
+                        <li className="sop_pink">
+                            <label for="pink">Pink</label>
+                            <input type="color" id="pink"/>
+                        </li>
+                        <li className="sop_yellow">
+                            <label for="yellow">Yellow</label>
+                            <input type="color" id="yellow"/>
                         </li>
                     </ul>
                 </div>

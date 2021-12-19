@@ -1,9 +1,5 @@
 import { React, useState } from "react";
 import "./Sop.scss";
-import sop from "./assets/sop.png";
-import workflow from "./assets/workflow.png";
-import batch from "./assets/batch.png";
-import qms from "./assets/qms.png";
 import addsoptype from "./assets/addsoptype.png";
 import addsop from "./assets/addsop.png";
 import sopList from "./assets/sop-list.png";
@@ -17,32 +13,7 @@ export default function Sop() {
 
     return (
         <div className="container-fluid sop_container">
-            <div className="sop-cont d-flex  justify-content-around">
-                <div class="sop">
-                    <button>
-                        <img src={workflow} alt="ActionBtn" />
-                        <span>WorkFlow</span>
-                    </button>
-                </div>
-                <div class="sop">
-                    <button>
-                        <img src={sop} alt="sop" />
-                        <span>SOP</span>
-                    </button>
-                </div>
-                <div class="sop">
-                    <button>
-                        <img src={batch} alt="batch" />
-                        <span>Batch</span>
-                    </button>
-                </div>
-                <div class="sop">
-                    <button>
-                        <img src={qms} alt="qms" />
-                        <span>QMS</span>
-                    </button>
-                </div>
-            </div>
+
             <div className="sop-add row ">
                 <div className="sop-add_cont d-flex  justify-content-between">
                     <ul className="sop_btn">

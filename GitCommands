@@ -1,0 +1,16 @@
+git remote add upstream https://github.com/Naveen265s/ShreemLims.git
+git remote set-url origin https://bitbucket.org/shreeminfotech/lira-frontend.git
+
+##After committing the code. you can run the below commands 
+
+git push origin main && git push upstream master
+
+## to switch to Bitbucket use below commands
+git fetch origin && git checkout main
+git pull && git push
+
+##after this you can update the code and use the `git push` command which will send the code to bitbucket
+
+#OR you can also use the below command to push the code to both github and bitbucket
+
+git push origin main && git push upstream master

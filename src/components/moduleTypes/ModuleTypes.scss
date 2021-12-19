@@ -1,0 +1,52 @@
+@import "../../VariablesFonts.scss";
+
+.p-tabview {
+    .p-tabview-nav-container {
+        background-color: #f5f8f1;
+        padding: 20px 0;
+        .p-tabview-nav {
+            max-width: 900px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            display: flex;
+            padding: 0;
+            justify-content: space-around;
+            width: 100%;
+            li {
+                &.p-tabview-ink-bar {
+                    display: none;
+                }
+                a {
+                    border: 1px solid black;
+                    background-color: #d5c7fa;
+                    border: none;
+                    outline: none;
+                    padding: 5px 20px;
+                    border-radius: 10px;
+                    font-weight: 500;
+                    display: inline-block;
+                    min-width: 200px;
+                    text-align: left;
+                    text-align: center;
+                    font-size: 21px;
+                    color: $black;
+                    cursor: pointer;
+                    img {
+                        width: 30px;
+                        object-fit: contain;
+                        margin-right: 20px;
+                    }
+                    img,
+                    span {
+                        vertical-align: middle;
+                    }
+                }
+                &.p-tabview-selected {
+                    a{
+                        background: #b397ff;
+                    }
+                }
+            }
+        }
+    }
+}

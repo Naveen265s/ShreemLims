@@ -10,8 +10,8 @@ export default function SimpleSlider() {
     const handleNavigate = () => {
         navigate('/UsersSecurity');
     }
-    const handleSop = () => {
-        navigate('/Sop');
+    const handleModule = () => {
+        navigate('/ModuleTypes');
     }
     var settings = {
         arrow: true,
@@ -70,7 +70,7 @@ export default function SimpleSlider() {
                     </div>
                     <h5>Sop</h5>
                     <p>5 Sop</p>
-                    <button className="action" onClick={handleSop}>
+                    <button className="action" onClick={handleModule}>
                         View
                     </button>
                 </div>
