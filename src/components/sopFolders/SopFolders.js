@@ -5,21 +5,12 @@ import LightPink from "./assets/lightPinkSopfolder.svg";
 import Green from "./assets/greenSopfolder.svg";
 import Mastersop from "../sopModels/Mastersop";
 import ActionBtn from "./assets/action.png";
-import UploadModal from "../sopModels/UploadModal";
-import ShareModal from "../sopModels/ShareModal";
-import SettingModal from "../sopModels/SettingModal";
-import DeleteModal from "../sopModels/DeleteModal";
 import ADDFolder from "./assets/AddFolder.png";
-
 import "./SopFolders.scss";
 import SopFolderLayer from "../sopFolderLayer/SopFolderLayer";
 
 function SopFolders() {
     const [masterModal, setmasterModal] = useState(false);
-    const [shareModal, setShareModal] = useState(false);
-    const [mastersopuploade, setmastersopuploade] = useState(false);
-    const [settingmodal, setsettingmodal] = useState(false);
-    const [deletemodal, setdeletemodal] = useState(false);
 
     return (
         <div className="sop_sec row">
@@ -149,16 +140,6 @@ function SopFolders() {
                     <SopFolderLayer />
                 </div>
             </div>
-            <DeleteModal show={deletemodal} onHide={() => setdeletemodal()} />
-            <SettingModal
-                show={settingmodal}
-                onHide={() => setsettingmodal()}
-            />
-            <ShareModal show={shareModal} onHide={() => setShareModal()} />
-            <UploadModal
-                show={mastersopuploade}
-                onHide={() => setmastersopuploade()}
-            />
             <Mastersop show={masterModal} onHide={() => setmasterModal()} />
         </div>
     );
