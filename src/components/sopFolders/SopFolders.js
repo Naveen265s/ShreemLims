@@ -11,13 +11,14 @@ import SopFolderLayer from "../sopFolderLayer/SopFolderLayer";
 
 function SopFolders() {
     const [masterModal, setmasterModal] = useState(false);
+    const [modalIndex, setModalIndex] = useState(null);
 
     return (
         <div className="sop_sec row">
             <div className="sop_folder col-sm-6 col-md-4 col-lg-3 col-xl-2">
                 <div className="sop_folder_inner">
                     <button className="action sopFolder_btn">
-                        <img src={ActionBtn} alt="ActionBtn" />
+                        <img onClick={() => setModalIndex(0)} src={ActionBtn} alt="ActionBtn" />
                     </button>
                     <div className="sop_cont">
                         <div className="sop_folder_count">
@@ -33,17 +34,17 @@ function SopFolders() {
                             <h2 className="sop_count">10</h2>
                         </div>
                         <div className="sop_details">
-                            <h3>Master Sop</h3>
+                            <h3>Master Sop1</h3>
                             <p>Modified Date</p>
                         </div>
                     </div>
-                    <SopFolderLayer />
+                    {modalIndex === 0 && <SopFolderLayer /> }
                 </div>
             </div>
             <div className="sop_folder col-sm-6 col-md-4 col-lg-3 col-xl-2 active">
                 <div className="sop_folder_inner">
                     <button className="action sopFolder_btn">
-                        <img src={ActionBtn} alt="ActionBtn" />
+                        <img onClick={() => setModalIndex(1)} src={ActionBtn} alt="ActionBtn" />
                     </button>
                     <div className="sop_cont">
                         <div className="sop_folder_count">
@@ -63,13 +64,13 @@ function SopFolders() {
                             <p>Modified Date</p>
                         </div>
                     </div>
-                    <SopFolderLayer />
+                    {modalIndex === 1 && <SopFolderLayer /> }
                 </div>
             </div>
             <div className="sop_folder col-sm-6 col-md-4 col-lg-3 col-xl-2">
                 <div className="sop_folder_inner">
                     <button className="action sopFolder_btn">
-                        <img src={ActionBtn} alt="ActionBtn" />
+                        <img onClick={() => setModalIndex(2)} src={ActionBtn} alt="ActionBtn" />
                     </button>
                     <div className="sop_cont">
                         <div className="sop_folder_count">
@@ -89,13 +90,13 @@ function SopFolders() {
                             <p>Modified Date</p>
                         </div>
                     </div>
-                    <SopFolderLayer />
+                    {modalIndex === 2 && <SopFolderLayer /> }
                 </div>
             </div>
             <div className="sop_folder col-sm-6 col-md-4 col-lg-3 col-xl-2">
                 <div className="sop_folder_inner">
                     <button className="action sopFolder_btn">
-                        <img src={ActionBtn} alt="ActionBtn" />
+                        <img onClick={() => setModalIndex(3)} src={ActionBtn} alt="ActionBtn" />
                     </button>
                     <div className="sop_cont">
                         <div className="sop_folder_count">
@@ -115,7 +116,7 @@ function SopFolders() {
                             <p>Modified Date</p>
                         </div>
                     </div>
-                    <SopFolderLayer />
+                    {modalIndex === 3 && <SopFolderLayer /> }
                 </div>
             </div>
             <div className="sop_folder col-sm-6 col-md-4 col-lg-3 col-xl-2">
@@ -137,7 +138,7 @@ function SopFolders() {
                             <p>Modified Date</p>
                         </div>
                     </div>
-                    <SopFolderLayer />
+                    {modalIndex === 4 && <SopFolderLayer /> }
                 </div>
             </div>
             <Mastersop show={masterModal} onHide={() => setmasterModal()} />
