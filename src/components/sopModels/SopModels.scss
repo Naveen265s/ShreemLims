@@ -52,9 +52,9 @@
             button {
                 border-radius: 25px;
                 min-width: 100px;
-                background-color: rgba(#999999, 1);
+                // background-color: rgba(#999999, 1);
                 border-radius: 26px;
-                border: 2px solid #999999;
+                border: 2px solid ;
             }
         }
     }
@@ -119,6 +119,11 @@
                     }
                 }
             }
+        }
+    }
+    &.sharemodal{
+        select{
+            width: 100%;
         }
     }
 }

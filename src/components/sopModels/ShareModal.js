@@ -1,11 +1,12 @@
 import React from "react";
-import { Modal } from "react-bootstrap";
+import { Modal,Button } from "react-bootstrap";
+import "./SopModels.scss"
 
 export default function ShareModal(props) {
     return (
         <>
-            <Modal show={props.show} onClick={props.onHide}>
-                <Modal.Header closeButton>Share</Modal.Header>
+            <Modal dialogClassName="sharemodal" show={props.show}>
+                <Modal.Header  onClick={props.onHide} closeButton>Share</Modal.Header>
                 <Modal.Body>
                     <div>
                         <h4>Share the folder with the team</h4>
@@ -14,9 +15,14 @@ export default function ShareModal(props) {
                             <option>HOD</option>
                             <option>Operator</option>
                         </select>
-                    </div>                  
+                       
+                    </div>
                 </Modal.Body>
+                <Modal.Footer>
+                    <Button className="btn btn-secondary" onClick={props.onHide}>Cancel</Button>
+                    <Button className="btn btn-success" >Save</Button>
+                </Modal.Footer>
             </Modal>
-        </>                                              
+        </>
     );
 }
