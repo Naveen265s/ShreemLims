@@ -6,8 +6,9 @@ export default function ShareModal(props) {
     return (
         <>
             <Modal dialogClassName="sharemodal" show={props.show}>
-                <Modal.Header  onClick={props.onHide} closeButton>Share</Modal.Header>
+                <Modal.Header  onClick={props.onHide} closeButton></Modal.Header>
                 <Modal.Body>
+                    <p className="text-center">Share</p>
                     <div>
                         <h4>Share the folder with the team</h4>
                         <select>
