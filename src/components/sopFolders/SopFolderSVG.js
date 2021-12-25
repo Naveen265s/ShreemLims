@@ -3,7 +3,7 @@ import React from "react";
 function SopFolderSVG() {
     return (
         <>
-        <svg
+        <svg  viewBox="-30 0 375 300"
         >
             <g>
                 <path

@@ -13,7 +13,6 @@ export default function Sop() {
 
     return (
         <div className="container-fluid sop_container">
-
             <div className="sop-add row ">
                 <div className="sop-add_cont d-flex  justify-content-between">
                     <ul className="sop_btn">

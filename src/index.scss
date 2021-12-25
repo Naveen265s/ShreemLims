@@ -13,49 +13,58 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-a{
-  color: $black;
-  text-decoration: none;
+a {
+    color: $black;
+    text-decoration: none;
 }
 
-ul, ol{
-  list-style: none;
-  li{
+ul,
+ol {
+    list-style: none;
+    li {
+        display: inline-block;
+    }
+}
+figure {
+    margin: auto;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    object-fit: contain;
+    height: auto;
+}
+
+.action {
+    width: auto;
+    height: 32px;
+    box-shadow: 1px 5px 20px 0px rgba(0, 0, 0, 0.25);
+    background-color: $white;
+    border-radius: 26px;
+    border: 2px solid $white;
     display: inline-block;
-  }
-}
-figure{
-  margin: auto;
-}
-img{
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-  object-fit: contain;
-  height: auto;
+    text-align: center;
+    padding: 3px 25px;
 }
 
-.action{
-  width: auto;
-  height: 32px;
-  box-shadow: 1px 5px 20px 0px rgba(0, 0, 0, 0.25);
-  background-color: $white;
-  border-radius: 26px;
-  border: 2px solid $white;
-  display: inline-block;
-  text-align: center;
-  padding: 3px 25px;
+h1 {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+h2 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+h3 {
+    font-size: clamp(1rem, 2.5vw, 1.17rem);
+}
+h4 {
+    font-size: clamp(1rem, 2.5vw, 1rem);
 }
 
-h1{
-  font-size: clamp(1rem, 2.5vw, 2rem); 
-}
-h2{
-  font-size: clamp(1rem, 2.5vw, 1.5rem); 
-}
-h3{
-  font-size: clamp(1rem, 2.5vw, 1.17rem); 
-}
-h4{
-  font-size: clamp(1rem, 2.5vw, 1rem); 
+// Button
+button {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background: none;
 }

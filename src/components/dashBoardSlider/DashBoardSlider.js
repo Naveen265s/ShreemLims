@@ -11,7 +11,7 @@ export default function SimpleSlider() {
         navigate('/UsersSecurity');
     }
     const handleModule = () => {
-        navigate('/ModuleTypes');
+        navigate('/sop');
     }
     var settings = {
         arrow: true,

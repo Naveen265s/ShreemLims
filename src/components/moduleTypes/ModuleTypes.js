@@ -1,29 +1,26 @@
-import React, { useState } from "react";
-import Sop from "../sop/Sop";
-import { TabView, TabPanel } from "primereact/tabview";
+import React from "react";
 import "./ModuleTypes.scss";
+import { Outlet } from "react-router";
+import { Link } from "react-router-dom";
 
 function ModuleTypes() {
-    const [activeIndex1, setActiveIndex1] = useState(1);
     return (
-        <div>
-            <TabView
-                activeIndex={activeIndex1}
-                onTabChange={(e) => setActiveIndex1(e.index)}
-            >
-                <TabPanel header="WorkFlow" className="workflow">
-                    <h2>WorkFlow</h2>
-                </TabPanel>
-                <TabPanel header="Sop" className="sop">
-                    <Sop />
-                </TabPanel>
-                <TabPanel header="Batch" className="batch">
-                    <h2>At Hero</h2>
-                </TabPanel>
-                <TabPanel header="QMS" className="qms">
-                    <h2>At Hero</h2>
-                </TabPanel>
-            </TabView>
+        <div className="module_types">
+            <ul >
+                <li className="workflow">
+                    <Link to="/workflow" >Workflow</Link>
+                </li>
+                <li className="sop">
+                    <Link to="/sop" >Sop</Link>
+                    {/* <Outlet/> */}
+                </li>
+                <li className="batch">
+                    <Link to="/batch" >Batch</Link>
+                </li>
+                <li className="qms">
+                    <Link to="/qms" >QMS</Link>
+                </li>
+            </ul>
         </div>
     );
 }

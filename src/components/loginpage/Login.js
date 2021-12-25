@@ -31,7 +31,7 @@ export default function Login() {
             {isUserLoggedIn ? (
                 <RoutesNavigates />
             ) : (
-                <div className="login_page_container">
+                <div className="login_page_container d-flex">
                     <div className="login_page_content">
                         <figure>
                             <img
