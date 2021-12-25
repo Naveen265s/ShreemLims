@@ -1,4 +1,4 @@
-import { React, useState} from "react";
+import { React, useState } from "react";
 import Orange from "./assets/OrangeSopfolder.svg";
 import Pink from "./assets/pinkSopfolder.svg";
 import LightPink from "./assets/lightPinkSopfolder.svg";
@@ -9,7 +9,7 @@ import ADDFolder from "./assets/AddFolder.png";
 import "./SopFolders.scss";
 import SopFolderLayer from "../sopFolderLayer/SopFolderLayer";
 import { useNavigate } from "react-router-dom";
-import SopFolderSVG from "./SopFolderSVG";
+import SopFolderSvg from "./SopFolderSvg";
 
 function SopFolders() {
     const [masterModal, setmasterModal] = useState(false);
@@ -22,7 +22,7 @@ function SopFolders() {
     };
     const handleFolderClick = () => {
         navigate("SopFolderInnerPage");
-    }
+    };
 
     return (
         <div className="sop_sec row">
@@ -38,11 +38,11 @@ function SopFolders() {
                         <img src={ActionBtn} alt="ActionBtn" />
                     </button>
                     <div className="sop_cont">
-                        <div className="sop_folder_count"
-                                onClick={handleFolderClick}
+                        <div
+                            className="sop_folder_count"
+                            onClick={handleFolderClick}
                         >
-                            
-                                <SopFolderSVG/>
+                            <SopFolderSvg />
                             <h2 className="sop_count">10</h2>
                         </div>
                         <div className="sop_details">
@@ -62,11 +62,11 @@ function SopFolders() {
                         <img src={ActionBtn} alt="ActionBtn" />
                     </button>
                     <div className="sop_cont">
-                    <div className="sop_folder_count"
-                                onClick={handleFolderClick}
+                        <div
+                            className="sop_folder_count"
+                            onClick={handleFolderClick}
                         >
-                            
-                                <SopFolderSVG/>
+                            <SopFolderSvg />
                             <h2 className="sop_count">10</h2>
                         </div>
                         <div className="sop_details">
@@ -86,11 +86,11 @@ function SopFolders() {
                         <img src={ActionBtn} alt="ActionBtn" />
                     </button>
                     <div className="sop_cont">
-                    <div className="sop_folder_count"
-                                onClick={handleFolderClick}
+                        <div
+                            className="sop_folder_count"
+                            onClick={handleFolderClick}
                         >
-                            
-                                <SopFolderSVG/>
+                            <SopFolderSvg />
                             <h2 className="sop_count">10</h2>
                         </div>
                         <div className="sop_details">
@@ -110,11 +110,11 @@ function SopFolders() {
                         <img src={ActionBtn} alt="ActionBtn" />
                     </button>
                     <div className="sop_cont">
-                    <div className="sop_folder_count"
-                                onClick={handleFolderClick}
+                        <div
+                            className="sop_folder_count"
+                            onClick={handleFolderClick}
                         >
-                            
-                                <SopFolderSVG/>
+                            <SopFolderSvg />
                             <h2 className="sop_count">10</h2>
                         </div>
                         <div className="sop_details">
