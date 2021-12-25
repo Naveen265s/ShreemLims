@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState} from "react";
 import Orange from "./assets/OrangeSopfolder.svg";
 import Pink from "./assets/pinkSopfolder.svg";
 import LightPink from "./assets/lightPinkSopfolder.svg";
@@ -8,14 +8,20 @@ import ActionBtn from "./assets/action.png";
 import ADDFolder from "./assets/AddFolder.png";
 import "./SopFolders.scss";
 import SopFolderLayer from "../sopFolderLayer/SopFolderLayer";
+import { useNavigate } from "react-router-dom";
 
 function SopFolders() {
     const [masterModal, setmasterModal] = useState(false);
     const [modalIndex, setModalIndex] = useState(null);
 
+    const navigate = useNavigate();
+
     const toggleClass = () => {
         setModalIndex(!modalIndex);
     };
+    const handleFolderClick = () => {
+        navigate("/SopFolderInnerPage");
+    }
 
     return (
         <div className="sop_sec row">
@@ -34,9 +40,7 @@ function SopFolders() {
                         <div className="sop_folder_count">
                             <figure>
                                 <img
-                                    onClick={() => {
-                                        setmasterModal(true);
-                                    }}
+                                    onClick={handleFolderClick}
                                     src={Orange}
                                     alt="sop"
                                 />
@@ -61,7 +65,7 @@ function SopFolders() {
                     </button>
                     <div className="sop_cont">
                         <div className="sop_folder_count">
-                            <figure>
+                            <figure >
                                 <img
                                     onClick={() => {
                                         setmasterModal(true);
