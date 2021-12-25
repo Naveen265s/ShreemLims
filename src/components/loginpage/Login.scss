@@ -91,12 +91,10 @@
                 background-color: rgb(196, 196, 196);
                 color: $black;
             }
-
-//   hoverBackground="rgb(144, 120, 242)"
-//   hoverTextColor="rgb(255, 255, 255)"
-//   onClick={Interaction}
-//   pressedBackground="rgb(132, 105, 242)"
-//   pressedTextColor="rgb(255, 255, 255)"
+            &:focus{
+                background-color: rgb(132, 105, 242);
+                color: $white
+            }
         }
     }
     h6 {

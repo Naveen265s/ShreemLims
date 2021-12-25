@@ -21,10 +21,11 @@
         .sop_folder_count {
             position: relative;
             cursor: pointer;
-            svg {
+            svg, img {
                 width: 100%;
                 max-width: 120px;
                 margin-bottom: 10px;
+                max-height: 96px;
             }
             .sop_count{
                 position: absolute;
@@ -38,7 +39,7 @@
         .sop_folder_Add{
             img{
                 width: 80px;
-                min-height: 120px;
+                min-height: 105px;
             }
         }
         button.action {

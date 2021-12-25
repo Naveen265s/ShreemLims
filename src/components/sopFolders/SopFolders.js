@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState} from "react";
 import Orange from "./assets/OrangeSopfolder.svg";
 import Pink from "./assets/pinkSopfolder.svg";
 import LightPink from "./assets/lightPinkSopfolder.svg";
@@ -22,7 +22,7 @@ function SopFolders() {
     };
     const handleFolderClick = () => {
         navigate("SopFolderInnerPage");
-    };
+    }
 
     return (
         <div className="sop_sec row">
@@ -38,11 +38,11 @@ function SopFolders() {
                         <img src={ActionBtn} alt="ActionBtn" />
                     </button>
                     <div className="sop_cont">
-                        <div
-                            className="sop_folder_count"
-                            onClick={handleFolderClick}
+                        <div className="sop_folder_count"
+                                onClick={handleFolderClick}
                         >
-                            <SopFolderSVG />
+                            
+                                <SopFolderSVG/>
                             <h2 className="sop_count">10</h2>
                         </div>
                         <div className="sop_details">
@@ -62,11 +62,11 @@ function SopFolders() {
                         <img src={ActionBtn} alt="ActionBtn" />
                     </button>
                     <div className="sop_cont">
-                        <div
-                            className="sop_folder_count"
-                            onClick={handleFolderClick}
+                    <div className="sop_folder_count"
+                                onClick={handleFolderClick}
                         >
-                            <SopFolderSVG />
+                            
+                                <SopFolderSVG/>
                             <h2 className="sop_count">10</h2>
                         </div>
                         <div className="sop_details">
@@ -86,11 +86,11 @@ function SopFolders() {
                         <img src={ActionBtn} alt="ActionBtn" />
                     </button>
                     <div className="sop_cont">
-                        <div
-                            className="sop_folder_count"
-                            onClick={handleFolderClick}
+                    <div className="sop_folder_count"
+                                onClick={handleFolderClick}
                         >
-                            <SopFolderSVG />
+                            
+                                <SopFolderSVG/>
                             <h2 className="sop_count">10</h2>
                         </div>
                         <div className="sop_details">
@@ -110,11 +110,11 @@ function SopFolders() {
                         <img src={ActionBtn} alt="ActionBtn" />
                     </button>
                     <div className="sop_cont">
-                        <div
-                            className="sop_folder_count"
-                            onClick={handleFolderClick}
+                    <div className="sop_folder_count"
+                                onClick={handleFolderClick}
                         >
-                            <SopFolderSVG />
+                            
+                                <SopFolderSVG/>
                             <h2 className="sop_count">10</h2>
                         </div>
                         <div className="sop_details">
@@ -128,12 +128,16 @@ function SopFolders() {
             <div className="sop_folder col-sm-6 col-md-4 col-lg-3 col-xl-2">
                 <div className="sop_folder_inner">
                     <div className="sop_cont">
-                        <div
-                            className="sop_folder_count"
-                            onClick={handleFolderClick}
-                        >
-                            <SopFolderSVG />
-                            <h2 className="sop_count">10</h2>
+                        <div className="sop_folder_Add">
+                            <figure>
+                                <img
+                                    onClick={() => {
+                                        setmasterModal(true);
+                                    }}
+                                    src={ADDFolder}
+                                    alt="sop"
+                                />
+                            </figure>
                         </div>
                         <div className="sop_details">
                             <h3>Master Sop</h3>
